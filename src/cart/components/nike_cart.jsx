@@ -5,10 +5,10 @@ import buslogo from "./favicon.svg"
 import { useDispatch, useSelector } from "react-redux"
 import {useState,useEffect} from "react"
 import { useParams } from 'react-router'
-import {desc,price,image} from "./polodetails"
+import {desc,price,image} from "./nikedetails"
 
 // import Button from "./Button.jsx"
-export function Cart() {
+export function Nikecart() {
 
   return (
     <div id="mainDiv">
@@ -118,7 +118,7 @@ export function Cart() {
                 <div>Deliver</div>    
                 <div>£{0}.00</div>  
                </div>
-               <Link to = "/checkout"><button id="checkoutbtn">CHECKOUT</button></Link>
+               <Link to = "/check"><button id="checkoutbtn">CHECKOUT</button></Link>
                {/* <Button btn="CHECKOUT"></Button> */}
                
                <div className="flextotal">

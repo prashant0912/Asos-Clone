@@ -3,17 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Provider } from 'react-redux';
-import { CartContextProvider } from './cart/components/cartContext';
 import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <CartContextProvider>
     <App />
-    </CartContextProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

@@ -1,13 +1,21 @@
 import { useParams } from "react-router"
 import {useState,useEffect} from "react"
+import {useNavigate} from "react-router-dom"
 import { Navbar } from "../../landing-page/components/Navbar";
 import { Footer } from "../../landing-page/components/Footer";
 import "./product.css"
+export var desc = "";
+export var price = "";
+export var image = "";
 export const Nikedetails = ()=>{
     const {id} = useParams();
     console.log(id)
+    const navigate = useNavigate();
 
     const [item,setItem] = useState({})
+    desc = item.Description;
+    price = item.Price;
+    image = item.image;
  
   useEffect(() => {
     getdata();
@@ -24,7 +32,7 @@ export const Nikedetails = ()=>{
 
     return (
         <div>
-            <Navbar/>
+        
             <div id="firsttwobox">
                 <div id="leftmensdiv">
                     <div id="textfirst">
@@ -44,12 +52,14 @@ export const Nikedetails = ()=>{
             </div>
             <div className = "desc">{item.Description}</div>
             <div className = "price">£{item.Price}.00</div>
-            <button className = "add">ADD TO BAG</button>
+            <button className = "add" onClick = {()=>{
+                navigate("/products_cart")
+            }}>ADD TO BAG</button>
             <div className = "pic_div"><img className = "pic" src={item.image} alt="" /></div>
             
             
             
-            <Footer/>
+
         </div>
     )
 }

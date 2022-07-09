@@ -3,9 +3,6 @@ import {useState,useEffect} from "react"
 import { Navbar } from "../../landing-page/components/Navbar";
 import { Footer } from "../../landing-page/components/Footer";
 import "../components/product.css";
-import { Cart } from "./Cart";
-import { CartContext } from "./cartContext";
-import { useContext } from "react";
 import { useNavigate } from "react-router";
 export var desc = "";
 export var price = "";
@@ -15,7 +12,6 @@ export var image = "";
 export const Productdetails = ()=>{
     const {id} = useParams()
     const [item,setItem] = useState({})
-    const {handlechange} = useContext(CartContext);
     desc = item.Description;
     price = item.Price;
     image = item.image;
@@ -61,7 +57,7 @@ export const Productdetails = ()=>{
             <div className = "desc">{item.Description}</div>
             <div className = "price">£{item.Price}.00</div>
             <button  className = "add" onClick = {()=>{
-                handlechange(item);
+                // handlechange(item);
                 navigate("/cart")
                 
             }}>ADD TO BAG</button>

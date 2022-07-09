@@ -20,6 +20,9 @@ import {Payment} from "./cart/components/pay"
 import {Navbar} from "./landing-page/components/Navbar"
 import {Footer} from "./landing-page/components/Footer"
 import {WomenPage} from "./womens/womenpage"
+import {Nikecart} from "./cart/components/nike_cart"
+import {Nikecheckout} from "./cart/components/nike_check"
+
 
 
 function App() {
@@ -39,6 +42,8 @@ function App() {
         <Route path = "/nike/:id" element = {<Nikedetails/>}></Route>
         <Route path = "/polo" element = {<Polopage/>}></Route>
         <Route path = "/cart" element = {<Cart/>}></Route>
+        <Route path = "/products_cart" element = {<Nikecart/>}></Route>
+        <Route path = "/check" element = {<Nikecheckout/>}></Route>
         <Route path = "/checkout" element = {<Checkout/>}></Route>
         <Route path = "/polo/:id" element = {<Productdetails/>}></Route>
         <Route path = "/done" element = {<Payment/>}></Route>
