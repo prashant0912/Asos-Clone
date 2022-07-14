@@ -30,7 +30,10 @@ export const Womenspage = () => {
             <div id="divimage2">
                 <img id="image2" src="https://i.ibb.co/QXBKvL4/hero-image-womens-page.jpg" alt="Hero image" srcset="" />
             </div>
-            <div id="fourpictures">
+            
+            
+            
+            <div id="fourpictures1">
                 {/* have to apply routing */}
                 <Link to="/women"> <div class="mainbrand">
                     <img class="mainbrand1" src="https://content.asos-media.com/-/media/homepages/ww/2022/apr/25/moments/ww_going_out_top_corsets_moment_870x1110.jpg" alt="" srcset="" />
@@ -39,27 +42,27 @@ export const Womenspage = () => {
                         <p>Night-out needs</p>
                     </div>
                 </div></Link>
-                <Link to="/dresses"> <div class="mainbrand">
+                <Link to="/women"> <div class="mainbrand">
                     <img class="mainbrand1" src="https://content.asos-media.com/-/media/homepages/ww/2022/apr/25/moments/ww_fluffy_dress_moment_870x1110.jpg" alt="" srcset="" />
                     <div>
                         <h3>FEEL-GOOD DRESSES</h3>
                         <p>Bare-leg season</p>
                     </div>
                 </div></Link>
-                <Link to="topshop">  <div class="mainbrand">
+                {/* <Link to="topshop">  <div class="mainbrand">
                     <img class="mainbrand1" src="https://content.asos-media.com/-/media/homepages/ww/2022/apr/25/moments/ww_gbl_topshop_moment_870x1110.png" alt="" srcset="" />
                     <div>
                         <h3>TOPSHOP</h3>
                         <p>One word: iconic</p>
                     </div>
-                </div></Link>
-                <Link to="highheels"> <div class="mainbrand">
+                </div></Link> */}
+                {/* <Link to="highheels"> <div class="mainbrand">
                     <img class="mainbrand1" src="https://content.asos-media.com/-/media/homepages/ww/2022/apr/25/moments/ww_heels_moment_870x1110.jpg" alt="" srcset="" />
                     <div>
                         <h3>SKY-HIGH HEELS</h3>
                         <p>Bearing your sole</p>
                     </div>
-                </div></Link>
+                </div></Link> */}
             </div>
             <div id="banner2">
                 <div id="bannerimage">
@@ -80,7 +83,7 @@ export const Womenspage = () => {
                     <div class="shopnowtext">
                         <h2>SURF'S UP</h2>
                         <p>Seas the day</p>
-                        <input className = "shop_now"type="button" value="SHOP NOW" />
+                        <a href = "/women"><input className = "shop_now"type="button" value="SHOP NOW" /></a>
                     </div>
 
                 </div>
@@ -88,11 +91,11 @@ export const Womenspage = () => {
                     <img class="shopnowimage" src="https://content.asos-media.com/-/media/homepages/ww/2022/apr/25/moments/ww_gbl_asosluxedresses_moment_870x1110.jpg" alt="" srcset="" />
                     <div class="shopnowtext"><h2>ASOS LUXE</h2>
                         <p>The luxe life chose you</p>
-                        <input className = "shop_now" type="button" value="SHOP NOW" /></div>
+                        <a href = "/women"><input className = "shop_now" type="button" value="SHOP NOW" /></a></div>
                 </div>
             </div>
             <div id="trend">
-                <h2>TRENDING BRANDS</h2>
+                <a href = "/women"><h2>TRENDING BRANDS</h2></a>
             </div>
             <div id="logoimg">
                 <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/monkl-hp-logos-256x256.jpg" alt="" srcset="" />

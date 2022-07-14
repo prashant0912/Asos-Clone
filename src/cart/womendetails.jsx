@@ -1,19 +1,23 @@
-import { useParams } from "react-router"
+import { Navigate, useParams } from "react-router"
 import {useState,useEffect} from "react"
-import {useNavigate} from "react-router-dom"
-import "./product.css"
+import "../cart/components/product.css";
+import { useNavigate } from "react-router";
 export var desc = "";
 export var price = "";
 export var image = "";
-export const Nikedetails = ()=>{
-    const {id} = useParams();
-    console.log(id)
-    const navigate = useNavigate();
 
+
+export const Womendetails = ()=>{
+    const {id} = useParams()
     const [item,setItem] = useState({})
     desc = item.Description;
     price = item.Price;
     image = item.image;
+    const navigate = useNavigate();
+
+
+
+
  
   useEffect(() => {
     getdata();
@@ -22,15 +26,15 @@ export const Nikedetails = ()=>{
   
 
   const getdata = async () => {
-    const data = await fetch(`https://men-backend2.herokuapp.com/nike/${id}`).then((d) => d.json());
+    const data = await fetch(`https://backend-women1.herokuapp.com/women/${id}`).then((d) => d.json());
     setItem(data)
     
-  };
+  }
 
 
     return (
         <div>
-        
+            
             <div id="firsttwobox">
                 <div id="leftmensdiv">
                     <div id="textfirst">
@@ -50,14 +54,17 @@ export const Nikedetails = ()=>{
             </div>
             <div className = "desc">{item.Description}</div>
             <div className = "price">£{item.Price}.00</div>
-            <button className = "add" onClick = {()=>{
-                navigate("/products_cart")
+            <button  className = "add" onClick = {()=>{
+                // handlechange(item);
+                navigate("/womencart")
+                
             }}>ADD TO BAG</button>
             <div className = "pic_div"><img className = "pic" src={item.image} alt="" /></div>
             
             
             
-
+            
+            
         </div>
     )
 }

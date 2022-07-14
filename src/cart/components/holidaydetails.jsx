@@ -5,7 +5,7 @@ import "./product.css"
 export var desc = "";
 export var price = "";
 export var image = "";
-export const Nikedetails = ()=>{
+export const Holidaydetails = ()=>{
     const {id} = useParams();
     console.log(id)
     const navigate = useNavigate();
@@ -22,7 +22,7 @@ export const Nikedetails = ()=>{
   
 
   const getdata = async () => {
-    const data = await fetch(`https://men-backend2.herokuapp.com/nike/${id}`).then((d) => d.json());
+    const data = await fetch(`https://men-backend2.herokuapp.com/holiday/${id}`).then((d) => d.json());
     setItem(data)
     
   };
@@ -51,7 +51,7 @@ export const Nikedetails = ()=>{
             <div className = "desc">{item.Description}</div>
             <div className = "price">£{item.Price}.00</div>
             <button className = "add" onClick = {()=>{
-                navigate("/products_cart")
+                navigate("/add_cart")
             }}>ADD TO BAG</button>
             <div className = "pic_div"><img className = "pic" src={item.image} alt="" /></div>
             

@@ -9,7 +9,7 @@ export const HomeImage = () => {
                         <div className='content_under_img text-center'>
                             <h1 className='heading'>This is ASOS</h1> <br />
                             <p className='para'>ASOS DESIGN and 850+ brands</p> <br />
-                            <button className='b1 me-3  mt-3'>SHOP WOMEN</button><button className='b2 ms-3 mt-3'>SHOP MEN</button>
+                            <a href = "/womens"><button className='b1 me-3  mt-3'>SHOP WOMEN</button></a><a href= "/mens"><button className='b2 ms-3 mt-3'>SHOP MEN</button></a>
                         </div>
                     </div>
                 </div>

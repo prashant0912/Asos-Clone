@@ -1,7 +1,5 @@
 import "./mens.css"
 import { Link } from 'react-router-dom';
-import { Navbar } from "../../../landing-page/components/Navbar";
-import { Footer } from "../../../landing-page/components/Footer";
 export const Menspage = () => {
     return (
         <div>
@@ -54,13 +52,13 @@ export const Menspage = () => {
                         <p>Home + away</p>
                     </div>
                 </div></Link>
-                <Link to="/berghaus"> <div class="mainbrand">
+                {/* <Link to="/berghaus"> <div class="mainbrand">
                     <img class="mainbrand1" src="https://content.asos-media.com/-/media/homepages/mw/2022/april/25/moments/mw_gbl_berghaus_moment_870x1110.jpg" alt="" srcset="" />
                     <div>
                         <h3>BERGHAUS</h3>
                         <p>The logo to know</p>
                     </div>
-                </div></Link>
+                </div></Link> */}
             </div>
             <div id="banner2">
                 <div id="bannerimage">
@@ -81,7 +79,7 @@ export const Menspage = () => {
                     <div class="shopnowtext">
                         <h2>SPRING SHIRTS</h2>
                         <p>Wavey looks</p>
-                        <input className = "shop_now" type="button" value="SHOP NOW" />
+                        <a href = "/holiday"><input className = "shop_now" type="button" value="SHOP NOW" /></a>
                     </div>
 
                 </div>
@@ -89,7 +87,7 @@ export const Menspage = () => {
                     <img class="shopnowimage" src="https://content.asos-media.com/-/media/homepages/mw/2022/april/25/moments/mw_logos_unrvlld_moment_870x1110.jpg" alt="unrvlled moments" srcset="" />
                     <div class="shopnowtext"><h2>WORDS UP</h2>
                         <p>Ft.new ASOS Unrvlld Spply</p>
-                        <input className = "shop_now" type="button" value="SHOP NOW" /></div>
+                      <a href= "/polo"><button className = "shop_now">SHOP NOW</button></a></div>
                 </div>
             </div>
             <div id="trend">

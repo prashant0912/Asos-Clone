@@ -52,9 +52,9 @@ export const Navbar = () => {
 
                 <div className='row'>
 
-                    <div className='col-lg-4 c_1'>
-                        <button className=''>WOMEN</button>
-                    </div>
+                    {/* <div className='col-lg-4 c_1'>
+                        <a href = "/womens"><button className='main'>WOMEN</button></a>
+                    </div> */}
 
                     <div className='col-lg-4 text-center mt-2 c_2'>
                         <strong className=''>UP TO 30% OFF SUN-READY STUFF
@@ -62,9 +62,9 @@ export const Navbar = () => {
                         </strong>
                     </div>
 
-                    <div className='col-lg-4  text-end c_1'>
-                        <button className='me-5'>MEN</button>
-                    </div>
+                    {/* <div className='col-lg-4  text-end c_1'>
+                        <a href = "/mens"><button className='main'>MEN</button></a>
+                    </div> */}
                 </div>
                 </div>
 
