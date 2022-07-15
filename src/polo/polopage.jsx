@@ -12,13 +12,13 @@ useEffect(() => {
   },[]);
 
   const handlesort = ()=>{
-    const sorted = [...item].sort(function(a,b){
+    const sorted = [...show].sort(function(a,b){
       return a.Price-b.Price
     })
     setShow(sorted)
   }
   const handlesort1 = ()=>{
-    const sorted = [...item].sort(function(a,b){
+    const sorted = [...show].sort(function(a,b){
       return b.Price-a.Price
     })
     setShow(sorted)
